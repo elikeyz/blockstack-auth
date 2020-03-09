@@ -1,0 +1,17 @@
+main {
+    margin-top: 50px;
+}
+
+.btn, .btn:hover {
+    background-color: #283593;
+    border-color: #283593;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
