@@ -1,3 +1,15 @@
 header {
     background-color: #283593;
 }
+
+.avatar-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar-container img {
+    width: 100%;
+    height: auto;
+}
