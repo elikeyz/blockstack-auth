@@ -13,3 +13,11 @@ header {
     width: 100%;
     height: auto;
 }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #CCCCCC;
+}

@@ -19,18 +19,18 @@ function Home() {
                 <Container>
                     <h1>Welcome to Blockstack Auth</h1>
                     <p>Click here to sign in</p>
-                    <button className="btn" onClick={() => blockstack.redirectToSignIn()}>Sign In with Blockstack</button>
+                    <button className="btn" onClick={() => blockstack.redirectToSignIn(window.location.origin)}>Sign In with Blockstack</button>
                 </Container>
             </main>
         );
     } else {
         return (
             <main>
-                <Container>
+                <Container className="landing-container">
                     <h1>Welcome back, {profile._profile.name}</h1>
                     <p>Click here to go to your profile</p>
                     <Link to="/profile">
-                        <button className="btn">Go To My Profile</button>
+                        <button tabindex="-1" className="btn">Go To My Profile</button>
                     </Link>
                 </Container>
             </main>

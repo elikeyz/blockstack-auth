@@ -1,6 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
+import * as blockstack from 'blockstack';
 import { ProfileContext } from '../../contexts/profile-context';
 import './header.css';
 
@@ -26,6 +28,10 @@ function Header() {
                                 <img src={profile._profile.image[0].contentUrl} alt="User avatar" />
                             </div>
                         </Link>
+                        <Nav.Link href="#" onClick={(e) => {
+                            e.preventDefault();
+                            blockstack.signUserOut(window.location.origin);
+                        }}>Sign Out</Nav.Link>
                     </Navbar.Collapse>
                 )}
             </Navbar>

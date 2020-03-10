@@ -1,0 +1,35 @@
+.profile-container h1 {
+    font-size: 2rem;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-content p {
+    text-align: center;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgb(0,0,0,0.3) 1px 1px 3px 2px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.profile-container p {
+    margin: 2px 0;
+}

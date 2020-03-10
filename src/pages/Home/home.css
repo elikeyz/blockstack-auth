@@ -2,16 +2,22 @@ main {
     margin-top: 50px;
 }
 
-.btn, .btn:hover {
+.btn {
     background-color: #283593;
     border-color: #283593;
     color: white;
 }
 
-h1 {
+.btn:hover {
+    background-color: #3949AB;
+    border-color: #3949AB;
+    color: white;
+}
+
+.landing-container h1 {
     font-size: 2rem;
 }
 
-p {
+.landing-container p {
     font-size: 1.2rem;
 }

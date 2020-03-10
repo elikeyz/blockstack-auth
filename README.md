@@ -1,6 +1,22 @@
 # Blockstack-Auth
 
+## Project Description
+
+This is a simple web application that utilizes the Blockstack API for user login and authentication. It is a 2-page application that contains a home page and a profile page.
+
+When the user logs in, he/she is redirected to the Blockstack domain to login using his/her Blockstack login credentials. After this is done, the user is then redirected back to the home page which then makes a link available for the user to navigate to his/her profile.
+
+This project was built using React, Bootstrap and Blockstack API. The user's profile details were stored in React Context in order for it to be made available to all the components in the application.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation and Usage
+
+To install this application, simply follow these steps:
+
+- Clone this repo
+- Install the dependencies with the command `yarn install`.
+- Run the application in development mode by running the command `npm start`. After the development server starts up, it will automatically open the application hosted on `localhost:3000` on your browser.
 
 ## Available Scripts
 
