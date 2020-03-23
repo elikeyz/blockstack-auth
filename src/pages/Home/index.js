@@ -10,7 +10,6 @@ function Home() {
 
     useEffect(() => {
         setProfile();
-        console.log(profile);
     }, [profile, setProfile]);
 
     if (Object.keys(profile).length < 1) {
@@ -27,10 +26,10 @@ function Home() {
         return (
             <main>
                 <Container className="landing-container">
-                    <h1>Welcome back, {profile._profile.name}</h1>
+                    <h1>Welcome back, {profile.profile.name}</h1>
                     <p>Click here to go to your profile</p>
                     <Link to="/profile">
-                        <button tabindex="-1" className="btn">Go To My Profile</button>
+                        <button tabIndex="-1" className="btn">Go To My Profile</button>
                     </Link>
                 </Container>
             </main>

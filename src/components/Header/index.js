@@ -11,7 +11,6 @@ function Header() {
 
     useEffect(() => {
         setProfile();
-        console.log(profile);
     }, [profile, setProfile]);
 
     return (
@@ -25,7 +24,7 @@ function Header() {
                     <Navbar.Collapse className="justify-content-end">
                         <Link to="/profile">
                             <div className="avatar-container">
-                                <img src={profile._profile.image[0].contentUrl} alt="User avatar" />
+                                <img src={profile.profile.image[0].contentUrl} alt="User avatar" />
                             </div>
                         </Link>
                         <Nav.Link href="#" onClick={(e) => {

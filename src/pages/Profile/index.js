@@ -10,7 +10,6 @@ function Profile() {
 
     useEffect(() => {
         setProfile();
-        console.log(profile);
     }, [profile, setProfile]);
 
     const profileUserSession = new UserSession();
@@ -26,10 +25,11 @@ function Profile() {
                 {Object.keys(profile).length >= 1 && (
                 <section className="profile-content">
                     <div className="image-container">
-                        <img src={profile._profile.image[0].contentUrl} alt="Profile avatar" />
+                        <img src={profile.profile.image[0].contentUrl} alt="Profile avatar" />
                     </div>
-                    <p className="profile-name">{profile._profile.name}</p>
-                    <p>{profile._profile.description}</p>
+                    <p className="profile-name">{profile.profile.name}</p>
+                    <p>{profile.username}</p>
+                    <p>{profile.profile.description}</p>
                 </section>
                 )}
             </Container>
